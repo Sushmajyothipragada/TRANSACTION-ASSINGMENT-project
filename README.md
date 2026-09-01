@@ -50,6 +50,14 @@ Each transaction contains:
 | PATCH | `/api/transactions/{transactionId}/status` | Update status |
 | GET | `/api/transactions/customer/{customerId}` | Get customer transactions |
 
+## API Testing -- Postman
+
+The API endpoints were tested manually using Postman.
+Tested transaction creation, retrieval, status updates, and validation scenarios.
+Verified HTTP status codes and API response data.
+Also tested invalid requests, duplicate transaction IDs, and non-existent transactions.
+All automated JUnit tests passed successfully with 0 failures and 0 errors.
+
 ## Error Handling
 
 Custom exceptions are used for business errors:
