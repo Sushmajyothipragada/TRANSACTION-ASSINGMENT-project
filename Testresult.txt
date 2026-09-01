@@ -1,4 +1,4 @@
-Toucan Spring Boot Starter - Test Results
+ Test Results
 
 Command executed:
 .\mvnw.cmd clean test
@@ -26,7 +26,7 @@ Test Classes:
 The application was successfully compiled and all automated tests passed.
 TEST CASES AND EXAMPLES
 
-1. shouldCreateTransactionSuccessfully
+1. should Create Transaction Successfully
    Purpose:
    Verifies that a valid transaction can be created successfully.
 
@@ -35,7 +35,7 @@ TEST CASES AND EXAMPLES
    Expected result: Transaction is created successfully with a successful HTTP status.
 
 
-2. shouldUpdateTransactionStatusSuccessfully
+2. should Update TransactionStatus Successfully
    Purpose:
    Verifies that the status of an existing transaction can be updated.
 
@@ -44,7 +44,7 @@ TEST CASES AND EXAMPLES
    Expected result: Transaction status is updated successfully.
 
 
-3. shouldReturnNotFoundForNonExistentTransaction
+3. should Return NotFound For NonExistentTransaction
    Purpose:
    Verifies that the API returns an appropriate response when a transaction
    with the requested ID does not exist.
@@ -54,7 +54,7 @@ TEST CASES AND EXAMPLES
    Expected result: HTTP 404 Not Found.
 
 
-4. shouldRejectInvalidTransaction
+4. should RejectInvalid Transaction
    Purpose:
    Verifies that invalid transaction data is rejected by the application.
 
@@ -63,7 +63,7 @@ TEST CASES AND EXAMPLES
    Expected result: Request is rejected with a validation error response.
 
 
-5. shouldRejectDuplicateTransactionId
+5. should RejectDuplicate TransactionId
    Purpose:
    Verifies that duplicate transaction IDs are not accepted.
 
@@ -72,7 +72,7 @@ TEST CASES AND EXAMPLES
    Expected result: Duplicate transaction is rejected with an appropriate error response.
 
 
-6. shouldGetTransactionsByCustomer
+6. should GetTransactionsByCustomer
    Purpose:
    Verifies that transactions can be retrieved for a specific customer.
 
