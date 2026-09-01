@@ -1,0 +1,102 @@
+Toucan Spring Boot Starter - Test Results
+
+Command executed:
+.\mvnw.cmd clean test
+
+Test Summary:
+Tests run: 7
+Failures: 0
+Errors: 0
+Skipped: 0
+
+BUILD SUCCESS
+
+Test Classes:
+1. TransactionControllerTest
+   - shouldCreateTransactionSuccessfully
+   - shouldUpdateTransactionStatusSuccessfully
+   - shouldReturnNotFoundForNonExistentTransaction
+   - shouldRejectInvalidTransaction
+   - shouldRejectDuplicateTransactionId
+   - shouldGetTransactionsByCustomer
+
+2. TransactionStarterApplicationTests
+   - contextLoads
+
+The application was successfully compiled and all automated tests passed.
+TEST CASES AND EXAMPLES
+
+1. shouldCreateTransactionSuccessfully
+   Purpose:
+   Verifies that a valid transaction can be created successfully.
+
+   Example:
+   Request: Create a transaction with valid transaction details.
+   Expected result: Transaction is created successfully with a successful HTTP status.
+
+
+2. shouldUpdateTransactionStatusSuccessfully
+   Purpose:
+   Verifies that the status of an existing transaction can be updated.
+
+   Example:
+   Request: Update the status of an existing transaction.
+   Expected result: Transaction status is updated successfully.
+
+
+3. shouldReturnNotFoundForNonExistentTransaction
+   Purpose:
+   Verifies that the API returns an appropriate response when a transaction
+   with the requested ID does not exist.
+
+   Example:
+   Request: Get or update a transaction using a non-existent transaction ID.
+   Expected result: HTTP 404 Not Found.
+
+
+4. shouldRejectInvalidTransaction
+   Purpose:
+   Verifies that invalid transaction data is rejected by the application.
+
+   Example:
+   Request: Submit a transaction containing invalid or missing required data.
+   Expected result: Request is rejected with a validation error response.
+
+
+5. shouldRejectDuplicateTransactionId
+   Purpose:
+   Verifies that duplicate transaction IDs are not accepted.
+
+   Example:
+   Request: Create a transaction using a transaction ID that already exists.
+   Expected result: Duplicate transaction is rejected with an appropriate error response.
+
+
+6. shouldGetTransactionsByCustomer
+   Purpose:
+   Verifies that transactions can be retrieved for a specific customer.
+
+   Example:
+   Request: Get transactions using a customer identifier.
+   Expected result: The API returns the transactions belonging to that customer.
+
+
+7. contextLoads
+   Purpose:
+   Verifies that the Spring Boot application context starts successfully.
+
+   Example:
+   Action: Start the Spring Boot application context during the test.
+   Expected result: Application context loads successfully without errors.
+
+
+FINAL RESULT
+
+All 7 automated tests passed successfully.
+
+Tests run: 7
+Failures: 0
+Errors: 0
+Skipped: 0
+
+BUILD SUCCESS
